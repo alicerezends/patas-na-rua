@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Patas na Rua</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F5F2EA;
+            color: #3D4035;
+        }
+
+        nav {
+            background-color: #657956;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            color: #526447;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 25px auto;
+            border-radius: 12px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #657956;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #526447;
+        }
+
+        footer {
+            background-color: #657956;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 25px 18px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Patas na Rua</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+        <img src="gato-ft.jpg" alt="Gato">
+    <main>
+
+        <section>
+            <h2>Como podemos ajudar?</h2>
+
+            <p>
+                Queremos incentivar atitudes que ajudem
+                cães e gatos em situação de rua.
+                Sua mensagem é importante!
+            </p>
+        </section>
+
+        <section>
+            <h2>Envie sua mensagem</h2>
+
+            <form action="#" method="post">
+
+                <label for="nome">Seu nome:</label>
+                <br>
+                <input type="text" id="nome"
+                       name="nome"
+                       placeholder="Digite seu nome"
+                       required>
+
+                <br><br>
+
+                <label for="email">Seu e-mail:</label>
+                <br>
+                <input type="email" id="email"
+                       name="email"
+                       placeholder="Digite seu e-mail"
+                       required>
+
+                <br><br>
+
+                <label for="assunto">Assunto:</label>
+                <br>
+                <select id="assunto" name="assunto">
+                    <option value="">Selecione</option>
+                    <option value="ajuda">Quero ajudar um animal</option>
+                    <option value="informacao">Encontrei um animal</option>
+                    <option value="parceria">Quero fazer uma parceria</option>
+                    <option value="outro">Outro assunto</option>
+                </select>
+
+                <br><br>
+
+                <label for="mensagem">Sua mensagem:</label>
+                <br>
+                <textarea id="mensagem"
+                          name="mensagem"
+                          rows="6"
+                          placeholder="Escreva sua mensagem..."
+                          required></textarea>
+
+                <br><br>
+
+                <button type="submit">Enviar mensagem</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Feito com carinho por Patas na Rua 🐾</p>
+        <a href="index.html">Voltar para a página inicial</a>
+    </footer>
+
+</body>
+</html>
